@@ -14,6 +14,8 @@ from pyspark.sql.functions import year, month, dayofmonth, concat, lpad, monoton
 import streamlit as st
 import pandas as pd
 from io import BytesIO
+import os
+os.environ['JAVA_HOME'] = "/opt/homebrew/opt/openjdk"
 
 
 stock_ticker = ["AAPL", "TSLA", "GOOG", "MSFT", "NVDA", "AMZN"]  # Add more stock symbols as needed
